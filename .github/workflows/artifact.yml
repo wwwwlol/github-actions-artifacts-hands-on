@@ -20,6 +20,7 @@ jobs:
         path: hello.txt
 
   download:
+     needs: [build]
      runs-on: ubuntu-latest
      steps:
      - uses: actions/download-artifact@v5
@@ -27,5 +28,6 @@ jobs:
        with:
          name: hello.txt
          path: ./artifacts
+
 
 
