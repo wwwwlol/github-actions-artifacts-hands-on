@@ -30,5 +30,6 @@ jobs:
          path: ./artifacts
 
      - name: Create a text file
-       run:  cat ./artifacts/hello-artifact
+       run:  cat ./artifacts/hello.txt
+
 
